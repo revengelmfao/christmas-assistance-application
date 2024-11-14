@@ -1,9 +1,9 @@
-const sponsorForm = document.getElementById('sponsorForm');
-console.log(sponsorForm)
+//const sponsorForm = document.getElementById('sponsorForm');
+
 
 //function to read from local storage and return parsed data
 function readLocalStorage(key) {
-  return JSON.parse(localStorage.getItem(key)) || [];
+   return JSON.parse(localStorage.getItem(key)) || [];
 }
 
 // function to save data to local storage
