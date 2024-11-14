@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 //const sponsorForm = document.getElementById('sponsorForm');
+=======
+>>>>>>> main
 
 
 //function to read from local storage and return parsed data
@@ -29,6 +32,7 @@ function sponsorFormHandler(event) {
     //get existing sponsor date and add new entry
     const sponsorData = readLocalStorage('sponsors')
     sponsorData.push(newSponsorData);
+    console.log(sponsorData);
     saveToLocalStorage('sponsors', sponsorData)
     //!!!!!! add this in once it exists
     // redirectPage(thankYou.html)
