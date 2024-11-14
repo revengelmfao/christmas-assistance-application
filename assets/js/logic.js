@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-//const sponsorForm = document.getElementById('sponsorForm');
-=======
->>>>>>> main
+
 
 
 //function to read from local storage and return parsed data
