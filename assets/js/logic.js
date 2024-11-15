@@ -19,26 +19,7 @@ const redirectPage = function (url) {
       console.log(url);
  };
 
- 
-//collect and store sponsor form data
-function sponsorFormHandler() {
-  
-    //get form data and store into object
-     //create object    
-    const newSponsorData = {
-      sponsorName: document.getElementById('sponsorName').value.trim(),
-      numchildren: document.getElementById('numChildren').value,
-      email: document.getElementById('email').value.trim(),
-      phonenumber:  document.getElementById('phone').value.trim(),
-     }
- 
-    //get existing sponsor date and add new entry
-    const sponsorData = readLocalStorage('sponsors')
-    sponsorData.push(newSponsorData);
-    console.log(sponsorData);
-    saveToLocalStorage('sponsors', sponsorData);
-    
-   }; 
+
 //generic function to store into local storage
  function storeLocalStorage (newEntry) {
         let data = readLocalStorage();
