@@ -11,14 +11,20 @@ function saveToLocalStorage(key, data) {
   localStorage.setItem(key, JSON.stringify(data));
 }
 
-//collect and store sponsor form data
-function sponsorFormHandler(event) {
-    //event.preventDefault();
+let redirectURL = '';
 
-    //get form data and store into object
+const redirectPage = function (url) {
+      redirectURL = url;
+      location.assign(url);
+      console.log(url);
+ };
+
  
-
-    //create object    
+//collect and store sponsor form data
+function sponsorFormHandler() {
+  
+    //get form data and store into object
+     //create object    
     const newSponsorData = {
       sponsorName: document.getElementById('sponsorName').value.trim(),
       numchildren: document.getElementById('numChildren').value,
@@ -30,10 +36,9 @@ function sponsorFormHandler(event) {
     const sponsorData = readLocalStorage('sponsors')
     sponsorData.push(newSponsorData);
     console.log(sponsorData);
-    saveToLocalStorage('sponsors', sponsorData)
-    //!!!!!! add this in once it exists
-    // redirectPage(thankYou.html)
-}
+    saveToLocalStorage('sponsors', sponsorData);
+    
+   }; 
 //generic function to store into local storage
  function storeLocalStorage (newEntry) {
         let data = readLocalStorage();
@@ -44,6 +49,9 @@ function sponsorFormHandler(event) {
        }
 
 
+
+
+       
 
   
     

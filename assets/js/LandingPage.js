@@ -4,10 +4,11 @@ const childForm = document.getElementById('childSignupForm');
 
 
 // Sponsor event listener
-sponsorForm.addEventListener('submit', function() {
-
+sponsorForm.addEventListener('submit', function(event) {
+    event.preventDefault();
     // Create object with sponsor data and store in local storage
     sponsorFormHandler();
+    redirectPage('thankyou.html');
 });
 
 // Child event listener
