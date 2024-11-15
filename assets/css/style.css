@@ -1,6 +1,3 @@
-div {
-    display: block;
-}
 
 #top-container {  /*Sets the height and width of the section */
     width: 100%;
@@ -26,73 +23,6 @@ div {
     object-fit: cover;
     object-position: right top;
 }
-/* Basic styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    height: 100vh;
-}
-
-/* Countdown container (Positioned in the top-right corner) */
-#countdown-container {
-    position: fixed;
-    top: 60px;
-    right: 10px;
-    background-color: #003366;
-    color: white;
-    padding: 20px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    width: 220px;
-    font-size: 16px;
-}
-
-#countdown-container p {
-    margin: 5px 0;
-    font-size: 20px;
-}
-
-#countdown-text {
-    font-size: 14px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-
-/* Christmas theme */
-#countdown-container {
-    background-color: #006400;
-    border: 2px solid #FFD700;
-}
-
-#countdown-container p {
-    font-size: 24px;
-}
-
-#countdown-container p#days {
-    color: #FF4500;
-}
-
-#countdown-container p#hours {
-    color: #FFD700;
-}
-
-#countdown-container p#minutes {
-    color: #32CD32;
-}
-
-#countdown-container p#seconds {
-    color: #FF6347;
-}
-
-/* end of countdown, team do not delete*/
 
 
 #header
@@ -138,20 +68,22 @@ body {
 
 #sponsor
 
-#footer {
-    position: fixed;  
-    left: 0;          
-    bottom: 0;        
-    width: 100%;      
-    background-color: #003366;
-    color: white;     
-    text-align: center; 
-    padding: 10px 0;  
-    font-size: 14px;  
-    z-index: 1000;   
+footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-top: 1px solid #ccc;
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    
+
 }
 
-/* Hover Effect */
-#footer p:hover {
-    color: #FFD700; 
+#footer p {
+    font-size: 17px;
+    color: black;
+    text-shadow: #f1f1f1  1px 1px 1px;
+    font-weight: bold;
+    text-align: center;
+    
 }
