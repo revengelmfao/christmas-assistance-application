@@ -27,12 +27,4 @@ const redirectPage = function (url) {
         data.push(newEntry)
         //save the updated blog dstorage to local storage
         localStorage.setItem('data', JSON.stringify(data));
-       }
-
-
-
-
-       
-
-  
-    
+       }    

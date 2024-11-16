@@ -15,189 +15,175 @@
 </head>
 <body>
 
-    <!--Header-->
-    <div id="header">
-        <h1>Community Christmas Assistance</h1>
+  <!--Header-->
+  <div id="header">
+      <h1>Community Christmas Assistance</h1>
+  </div>
+  <div id="container">
+    <p>The purpose of the Christmas Community Outreach assistance program is to help families in need of assistance during the holidays.</p>
+  </div>
+
+  <div id="container-2">
+      <!-- Left Column: Summary of Program -->
+      <div id="summary">
+          <h2 >Summary.</h2>
+          <p>Our motivation behind creating this project is ultimately to help children of families receive their wishlist gift for christmas in the spirit of the holidays.
+             Being able to give back to the community is a great feeling and we hope to make a difference in the lives of these children and their families.
+          </p>
+      </div>
+
+      <!-- Center Column: Wishlist and Donor Images -->
+      <div class="images-container">
+        <h3>Wishlist Image</h3>
+        <img id="resize" src="./assets/images/wishlist-image.png" alt="wishlist image">
+
+        <h4>Sponsor Image </h4>
+        <img id="resize" src="./assets/images/donate-image.png" alt="sponsor donate image">
     </div>
-    <div id="container">
-      <p>The purpose of the Christmas Community Outreach assistance program is to help families in need of assistance during the holidays.</p>
-    </div>
-  
 
-    <div id="container-2">
-        <!-- Left Column: Summary of Program -->
-        <div id="summary">
-            <h2 >Summary.</h2>
-            <p>Our motivation behind creating this project is ultimately to help children of families receive their wishlist gift for christmas in the spirit of the holidays.
-              Being able to give back to the community is a great feeling and we hope to make a difference in the lives of these children and their families.
-            </p>
-        </div>
-
-        <!-- Center Column: Wishlist and Donor Images -->
-        <div class="images-container">
-                <h3>Wishlist Image</h3>
-                <img id="resize" src="./assets/images/wishlist-image.png" alt="wishlist image">
-       
-               
-                <h4>Donor Image </h4>
-                <img id="resize" src="./assets/images/donate-image.png" alt="sponsor donate image">
-
-        </div>
-
-<!-- Right Column: Assistance and Sponsor Options -->
-<div id="options">
+  <!-- Right Column: Assistance and Sponsor Options -->
+  <div id="options">
+    
     <!-- Assistance Section -->
     <div id="assistance">
-        <p>Text: If you are a family in need of assistance…</p>
-          <!-- Button to Open the Modal to sign up a child -->
-        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#childSignupModal">
-            Sign Up a Child
-          </button>
+      <p>Text: If you are a family in need of assistance…</p>
+      <!-- Button to Open the Modal to sign up a child -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#childSignupModal">
+        Sign Up a Child
+      </button>
           
-          <!-- The Modal -->
-          <div class="modal fade" id="childSignupModal" tabindex="-1" role="dialog" aria-labelledby="childSignupModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="childSignupModalLabel">Sign Up a Child</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <form id="childSignupForm">
-                    <div class="form-group">
-                      <label for="childName">Child's Full Name</label>
-                      <input type="text" class="form-control" id="childName" name="childName" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="gender">Gender</label>
-                      <select class="form-control" id="gender" name="gender" required>
-                        <option value="">Select Gender</option>
-                        <option value="male">Male</option>
-                        <option value="female">Female</option>
-                        <option value="other">Other</option>
-                      </select>
-                    </div>
-                    <div class="form-group">
-                      <label for="age">Age</label>
-                      <input type="number" class="form-control" id="age" name="age" min="0" required>
-                    </div>
-                    <div class="form-group">
-                      <label for="preferredGifts">List of 5 Preferred Gifts</label>
-                      <textarea class="form-control" id="preferredGifts" name="preferredGifts" rows="3" placeholder="Enter up to 5 gifts, separated by commas" required></textarea>
-                      <small class="form-text text-muted">Example: Toy car, Coloring book, Doll, Soccer ball, Puzzle</small>
-                    </div>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                  <button type="submit" form="childSignupForm" class="btn btn-primary">Submit</button>
-                </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="childSignupModal" tabindex="-1" role="dialog" aria-labelledby="childSignupModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="childSignupModalLabel">Sign Up a Child</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form id="childSignupForm">
+              <div class="form-group">
+                <label for="childName">Child's Full Name</label>
+                <input type="text" class="form-control" id="childName" name="childName" required>
               </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select class="form-control" id="gender" name="gender" required>
+                <option value="">Select Gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+              </select>
             </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" class="form-control" id="age" name="age" min="0" max="17" required>
+            </div>
+            <div class="form-group">
+              <label for="preferredGifts">List of 5 Preferred Gifts</label>
+              <textarea class="form-control" id="preferredGifts" name="preferredGifts" rows="3" placeholder="Enter up to 5 gifts, separated by commas" required></textarea>
+              <small class="form-text text-muted">Example: Toy car, Coloring book, Doll, Soccer ball, Puzzle</small>
+            </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" form="childSignupForm" class="btn btn-primary">Submit</button>
           </div>
         </div>
+      </div>
+    </div>
+    </div>
 
     <!-- Sponsor Section -->
     <div id="sponsor">
-        <p>Text: If you would like to be a sponsor…</p>
-    <!-- Button to Open the Modal for sponsor -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sponsorModal">
+      <p>Text: If you would like to be a sponsor…</p>
+      <!-- Button to Open the Modal for sponsor -->
+      <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#sponsorModal">
         Sponsor a Family
-    </button>
+      </button>
     
-    <!-- The Modal -->
-    <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="sponsorModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+      <!-- The Modal -->
+      <div class="modal fade" id="sponsorModal" tabindex="-1" role="dialog" aria-labelledby="sponsorModalLabel" aria-hidden="true" data-backdrop="static" data-keyboard="false">
         <div class="modal-dialog" role="document">
-        <div class="modal-content">
+          <div class="modal-content">
             <div class="modal-header">
-            <h5 class="modal-title" id="sponsorModalLabel">Sponsor a Family</h5>
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <h5 class="modal-title" id="sponsorModalLabel">Sponsor a Family</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
-            </button>
+              </button>
             </div>
-            <div class="modal-body">
+          <div class="modal-body">
             <form id="sponsorForm">
-                <div class="form-group">
+              <div class="form-group">
                 <label for="sponsorName">Sponsor Name</label>
                 <input type="text" class="form-control" id="sponsorName" name="sponsorName" required>
-                </div>
-                <div class="form-group">
+              </div>
+              <div class="form-group">
                 <label for="numChildren">Number of Children to Sponsor</label>
-                <input type="number" class="form-control" id="numChildren" name="numChildren" min="1" required>
-                </div>
-                <div class="form-group">
+                <input type="number" class="form-control" id="numChildren" name="numChildren" min="1" max="2" required>
+              </div>
+              <div class="form-group">
                 <label for="email">Email Address</label>
                 <input type="email" class="form-control" id="email" name="email" required>
-                </div>
-                <div class="form-group">
+              </div>
+              <div class="form-group">
                 <label for="phone">Phone Number</label>
-                <input type="tel" class="form-control" id="phone" name="phone" required>
-                </div>
+                <input type="tel" class="form-control" id="phone" name="phone" pattern="^\d{10}$" maxlength="10" required>
+              </div>
             </form>
-            </div>
-            <div class="modal-footer">
+          </div>
+          <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
             <button type="submit" form="sponsorForm" class="btn btn-primary">Submit</button>
-            </div>
+          </div>
         </div>
         </div>
+      </div>
     </div>
-    </div>
-</div>
-    
+  </div>
 
-    
-
-  
-
- <!--Our source JS--> 
- <script src="./assets/js/logic.js"></script>
- <script src="./assets/js/LandingPage.js"></script> 
- <script src="assets/js/countdown.js"></script> 
-    <!-- Bootstrap Java -->
- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
- <div id="countdown-container">
-  <video autoplay muted loop id = "bg-video">
-    <source src = "./assets/images/christmas-bg.mp4" type = "video/mp4">
-  </video>
+  <div id="countdown-container">
+    <video autoplay muted loop id = "bg-video">
+      <source src = "./assets/images/christmas-bg.mp4" type = "video/mp4">
+    </video>
   <div id="countdown">
-      <div class="time-box">
-          <div id="days">0</div>
-          <div class="label">Days</div>
-      </div>
-      <div class="time-box">
-          <div id="hours">0</div>
-          <div class="label">Hours</div>
-      </div>
-      <div class="time-box">
-          <div id="minutes">0</div>
-          <div class="label">Minutes</div>
-      </div>
-      <div class="time-box">
-          <div id="seconds">0</div>
-          <div class="label">Seconds</div>
-      </div>
+    <div class="time-box">
+      <div id="days">0</div>
+      <div class="label">Days</div>
+    </div>
+    <div class="time-box">
+      <div id="hours">0</div>
+      <div class="label">Hours</div>
+    </div>
+    <div class="time-box">
+      <div id="minutes">0</div>
+      <div class="label">Minutes</div>
+    </div>
+    <div class="time-box">
+      <div id="seconds">0</div>
+      <div class="label">Seconds</div>
+    </div>
   </div>
   <div id="countdown-text">"  WE WISH YOU A MERRY CHRISTMAS  "</div>
-
   <br> <br>
 
 <!--Footer-->
-    <div id="footer">
-      <p>Copyright Ⓒ 2024. Community Christmas Assistance. </p>
-    </div>
-  
-  
-  </body>
-  </html>
-  
+<div id="footer">
+  <p>Copyright Ⓒ 2024. Community Christmas Assistance. </p>
 </div>
 
+<!--Our source JS--> 
+<script src="./assets/js/logic.js"></script>
+<script src="./assets/js/LandingPage.js"></script> 
+<script src="assets/js/countdown.js"></script> 
+
+<!-- Bootstrap Java -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
 </body>
 </html>
