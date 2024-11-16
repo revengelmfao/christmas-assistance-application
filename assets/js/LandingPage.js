@@ -11,6 +11,28 @@ sponsorForm.addEventListener('submit', function(event) {
     redirectPage('thankyou.html');
 });
 
+ 
+//collect and store sponsor form data
+function sponsorFormHandler() {
+  
+    //get form data and store into object
+     //create object    
+    const newSponsorData = {
+      sponsorName: document.getElementById('sponsorName').value.trim(),
+      numchildren: document.getElementById('numChildren').value,
+      email: document.getElementById('email').value.trim(),
+      phonenumber:  document.getElementById('phone').value.trim(),
+     }
+ 
+    //get existing sponsor date and add new entry
+    const sponsorData = readLocalStorage('sponsors')
+    sponsorData.push(newSponsorData);
+    console.log(sponsorData);
+    saveToLocalStorage('sponsors', sponsorData);
+    
+   }; 
+
+
 // Child event listener
 childForm.addEventListener('submit', function() {
     
@@ -19,7 +41,7 @@ childForm.addEventListener('submit', function() {
     let interestList = childInterest.value.split(',');
     
     if (interestList.length > 5) {
-        alert('Please list no more than five preferred gifts');
+       alert('Please list no more than five preferred gifts');
         return;
     }
 
@@ -37,6 +59,4 @@ childForm.addEventListener('submit', function() {
     console.log(childData);
     saveToLocalStorage('families', childData);
 
-    // Redirect to thank you page for child
-    //redirectPage('thankYou.html');
 });
