@@ -39,8 +39,10 @@ function displayThankYouData() {
         }
         childrenToDisplay.forEach(child => {
             const childSection = document.createElement('div');
+            const firstNAme = child.childName.split(' ')[0];
             childSection.innerHTML = `
-                <h2>${child.childName}</h2>
+                <h2>${firstNAme}</h2>
+                <h3>Age: ${child.childAge}</h3>
                 <h3>Wishlist:</h3>
                 <ul>
                     ${child.childInterest
