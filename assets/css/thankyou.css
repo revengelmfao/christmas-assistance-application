@@ -60,7 +60,10 @@ p {
     border: 1px solid #ccc;
     border-radius: 5px;
     max-width: 600px;
-  
+
+    z-index: 2; 
+    position: relative; 
+
 }
 
 #childRef h2 {
@@ -94,6 +97,7 @@ p {
     text-shadow: #f1f1f1  1px 1px 1px;
     font-weight: bold;
     text-align: center;
+
  
     
 }
@@ -197,3 +201,6 @@ p {
         margin: 10px 0;
     }
 }
+=======
+}
+
