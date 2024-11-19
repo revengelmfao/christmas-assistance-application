@@ -1,4 +1,10 @@
 /* Base styles */
+:root {
+    --primary-color: #555d24;
+    --secondary-color: #761603;
+    --tritary-color: #96985e;
+}
+
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -9,21 +15,17 @@
 body {
     background-color: #f9f9f9;
     padding: 20px;
+    background-color: var(--tritary-color);
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: gainsboro;
-    margin-bottom: 20px;
-}
-
-header h1 {
+.heading {
     font-size: 2em;
     font-weight: bold;
-    color: #333;
+    color: #ac7d24;
+    text-align: center;
+    padding: 20px;
+    margin-bottom: 20px;
+    background-color: var(--secondary-color);
 }
 
 .home-button {    
@@ -54,10 +56,40 @@ header h1 {
 
 #summary {
     flex: 1;
-    background-color: #e6e6e6;
+    background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#summary h2 {
+    color: #ac7d24;
+    font-weight: bold;
+    text-align: center;
+}
+
+#summary p {
+    color: #ac7d24;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#assistance {
+    background-color: var(--secondary-color);
+}
+
+#assistance p {
+    color: #ac7d24;
+    font-size: 30px;
+}
+
+#sponsor {
+    background-color: var(--secondary-color);
+}
+
+#sponsor p {
+    color: #ac7d24;
+    font-size: 30px;
 }
 
 .images-container {
@@ -89,7 +121,7 @@ header h1 {
 #options button {
     margin-top: 10px;
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #555d24;
     color: white;
     border: none;
     border-radius: 5px;
