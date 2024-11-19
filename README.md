@@ -23,7 +23,7 @@ The application incorporates modern web development practices such as localStora
 
 ## **Installation**
 Ensure you have the following installed:
-* A modern eb browser.
+* A modern web browser.
 * A local online text editor (e.g., VS Code) to customize text
   
 **To Install**
