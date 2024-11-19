@@ -10,7 +10,7 @@ The application incorporates modern web development practices such as localStora
 ## **Features**
 * **Sponsor Form:** Allows sponsors to register and specify the number of children they wish to sponsor.
 * **Child Form:** Enables the registration of children with their details and gift preferences.
-* **Dynamic Data Handling:** Saves and retrieves sponsor and chuld das using web browser;s local storage.
+* **Dynamic Data Handling:** Saves and retrieves sponsor and child data using web browser's local storage.
 * **Personalized Thank-You Page:** Displays sponsored children based on the sponsors preferences.
 * **Countdown Timer:** Real-time countdown to Christmas.
 * **Accessibility Features:** Includes semantic HTML and ARIA attributes.
@@ -33,7 +33,7 @@ Ensure you have the following installed:
  
   ## **Usage**
   1. **Child Registration**
-      * Register children ahead of sponsors if possible
+      * Register children ahead of sponsor if possible
       * Register child by filling out their details including up to five wishlist items.
       * Submit the form to save the child's information.
   2. **Sponsor Registration**
@@ -41,7 +41,7 @@ Ensure you have the following installed:
      * Submit the form to save the details and be redirected to the Thank You page.The Thanks you page dynamically
        displays the child/children the sponsor has been matched with.
   3. **Countdown to Christmas**
-     * The countdown times counts down util Chrismas day, at which point it will display "Merry Christmas".  
+     * The countdown times counts down until Chrismas day, at which point it will display "Merry Christmas".  
 
 ## **Future Enhancements**
 * Include email notificaions to sponors after they submit their form. 
