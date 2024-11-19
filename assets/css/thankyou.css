@@ -43,6 +43,7 @@ header {
     font-weight: bold;
     color: #ac7d24;
     text-align: center;
+    text-shadow: whitesmoke 1px 1px 1px;
 }
 
 .home-button {
@@ -55,7 +56,9 @@ header {
 }
 
 .home-button:hover {
-    background-color: var(--primary-color);
+    background-color: #13cc4e;
+    color: #b3000c;
+    text-shadow: white 1px 1px 1px;
 }
 
 section {
@@ -64,11 +67,23 @@ section {
     text-align: center;
 }
 
+
 h1 {
     font-size: 2em;
     font-weight: bold;
     margin: 20px 0;
+    color: #ac7d24;
+    text-shadow: black 1px 1px 1px;
 }
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bold;
+    margin: 20px 0;
+    color: #ac7d24;
+    text-shadow: black 1px 1px 1px;
+}
+
 
 #message {
     font-size: 20px;

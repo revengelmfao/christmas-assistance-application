@@ -29,13 +29,17 @@ body {
     background-color: var(--tritary-color);
 }
 
+
+
 .heading {
-    font-size: 2em;
+    font-size: 3em;
     font-weight: bold;
     color: #ac7d24;
+    text-shadow: whitesmoke 1px 1px 1px;
     text-align: center;
     padding: 20px;
     margin-bottom: 20px;
+    border-radius: 8px;
     background-color: var(--secondary-color);
 }
 
@@ -75,12 +79,15 @@ body {
 
 #summary h2 {
     color: #ac7d24;
+    text-shadow: whitesmoke 1px 1px 1px;
     font-weight: bold;
     text-align: center;
 }
 
 #summary p {
     color: #ac7d24;
+    text-align: justify;
+    align-items: center;
     font-size: 20px;
     font-weight: 700;
 }
@@ -141,8 +148,11 @@ body {
 }
 
 #options button:hover {
-    background-color: #0056b3;
+    background-color: #13cc4e;
+    color: whitesmoke;
+    text-shadow: #b3000c 1px 1px 1px;
 }
+
 
 #top-container {
     width: 100%;
