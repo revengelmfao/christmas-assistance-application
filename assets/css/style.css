@@ -1,3 +1,4 @@
+/* Base styles */
 * {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -10,19 +11,44 @@ body {
     padding: 20px;
 }
 
-#header {
-    text-align: center;
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: gainsboro;
     margin-bottom: 20px;
 }
 
-#container {  
+header h1 {
+    font-size: 2em;
+    font-weight: bold;
+    color: #333;
+}
+
+.home-button {    
+    text-decoration: none;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+.home-button:hover {
+    background-color: #555;
+}
+
+
+#container {
     background-color: whitesmoke;
     text-align: center;
-  }
+}
 
 #container-2 {
     display: flex;
     justify-content: space-between;
+    align-content: center;
     gap: 20px;
 }
 
@@ -55,7 +81,6 @@ body {
 
 #options div {
     text-align: center;
-    /*background-color: #e6e6e6;*/
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -76,20 +101,14 @@ body {
     background-color: #0056b3;
 }
 
-#top-container {  
+#top-container {
     width: 100%;
     height: 100px;
     background-color: whitesmoke;
     text-align: center;
-  }
-
-#summary
-
-.images-container{
-    
 }
 
-#wishlist
+#wishlist {}
 
 #resize {
     object-fit: cover;
@@ -97,45 +116,6 @@ body {
     size: 300px;
 }
 
-#header
-{
-    background-color: #32CD32;
-    flex-wrap: wrap;
-    margin: auto;
-    padding: 0%;
-    flex-direction: column;
-    border:#FF4500;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    width: 100%;
-    font-size: 45px;
-    text-align: center;
-    color: red;
-    text-shadow: 2px 2px 4px whitesmoke; 
-    }
-    
-    #header:hover {
-        background-color: red;
-        color: green;
-        text-shadow: 2px 2px 4px white;
-
-}   
-
-#container 
-
-#summary
-
-#images
-
-#wishlist
-
-#donor
-
-#options
-
-#assistance
-
-#sponsor
 
 footer {
     background-color: #f1f1f1;
@@ -144,15 +124,155 @@ footer {
     flex-direction: row;
     display: flex;
     justify-content: center;
-    
-
 }
 
 #footer p {
     font-size: 17px;
     color: black;
-    text-shadow: #f1f1f1  1px 1px 1px;
+    text-shadow: #f1f1f1 1px 1px 1px;
     font-weight: bold;
     text-align: center;
-    
+}
+
+/* Media Query for Tablets and Smaller Screens (max-width: 1024px) */
+@media (max-width: 1024px) {
+    #container-2 {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #summary, .images-container, #options {
+        flex: unset;
+        width: 100%;
+    }
+
+    #summary {
+        padding: 15px;
+        font-size: 0.9rem;
+    }
+
+    .images-container img {
+        max-width: 180px;
+    }
+
+    #options button {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 15px 10px;
+    }
+
+    #footer p {
+        font-size: 15px;
+    }
+}
+
+/* Media Query for Small Smartphones (max-width: 768px) */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    #header {
+        font-size: 36px;
+        padding: 10px 0;
+    }
+
+    #container-2 {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #summary, .images-container, #options {
+        width: 100%;
+        padding: 15px;
+    }
+
+    #summary {
+        margin-bottom: 15px;
+    }
+
+    .images-container img {
+        max-width: 150px;
+    }
+
+    #options button {
+        padding: 8px 14px;
+        font-size: 0.9rem;
+    }
+
+    #footer p {
+        font-size: 14px;
+    }
+}
+
+/* Media Query for Small Smartphones (max-width: 375px) */
+@media (max-width: 375px) {
+    body {
+        padding: 5px;
+    }
+
+    #header {
+        font-size: 28px;
+        padding: 10px 0;
+    }
+
+    #container-2 {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    #summary, .images-container, #options {
+        padding: 12px;
+    }
+
+    .images-container img {
+        max-width: 130px;
+    }
+
+    #options button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    #footer p {
+        font-size: 13px;
+    }
+}
+
+/* Media Query for Very Small Screens (max-width: 320px) */
+@media (max-width: 320px) {
+    body {
+        padding: 5px;
+    }
+
+    #header {
+        font-size: 24px;
+        padding: 8px 0;
+    }
+
+    #container-2 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #summary, .images-container, #options {
+        padding: 10px;
+    }
+
+    .images-container img {
+        max-width: 120px;
+    }
+
+    #options button {
+        padding: 6px 10px;
+        font-size: 0.8rem;
+    }
+
+    #footer p {
+        font-size: 12px;
+    }
 }

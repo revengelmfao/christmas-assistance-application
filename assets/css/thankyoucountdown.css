@@ -58,3 +58,100 @@
     text-shadow: black 3px 3px 3px;
     font-weight: bold;
 }
+
+
+/* Media Query for Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+    #bg-video {
+        object-fit: cover;
+        height: 80%;
+    }
+
+    #countdown-container {
+        padding: 0 1rem;
+    }
+
+    #countdown {
+        gap: 10px;
+    }
+
+    .time-box {
+        width: 90px;
+        height: 90px;
+        font-size: 2.5rem;
+        margin: 1.5rem;
+    }
+
+    .label {
+        font-size: 1rem;
+    }
+
+    #countdown-text {
+        font-size: 28px;
+        margin-top: -5px;
+    }
+}
+
+/* Media Query for Small Smartphones (max-width: 375px) */
+@media (max-width: 375px) {
+    #bg-video {
+        object-fit: cover;
+        height: 70%;
+    }
+
+    #countdown-container {
+        padding: 0 0.5rem;
+    }
+
+    #countdown {
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .time-box {
+        width: 70px;
+        height: 70px;
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .label {
+        font-size: 0.9rem;
+    }
+
+    #countdown-text {
+        font-size: 24px;
+    }
+}
+
+/* Media Query for Very Small Screens (max-width: 320px) */
+@media (max-width: 320px) {
+    #bg-video {
+        object-fit: cover;
+        height: 60%;
+    }
+
+    #countdown-container {
+        padding: 0 0.3rem;
+    }
+
+    #countdown {
+        flex-direction: column;
+        gap: 6px;
+    }
+
+    .time-box {
+        width: 60px;
+        height: 60px;
+        font-size: 1.8rem;
+        margin: 1rem;
+    }
+
+    .label {
+        font-size: 0.8rem;
+    }
+
+    #countdown-text {
+        font-size: 20px;
+    }
+}
