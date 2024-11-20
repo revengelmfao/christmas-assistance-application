@@ -63,4 +63,6 @@ https://revengelmfao.github.io/christmas-assistance-application/
   ## **License**
   This project is licensed under the MIT License. 
 
+![Screenshot 2024-11-19 at 11 03 16 PM](https://github.com/user-attachments/assets/73b0baa7-3da1-4603-ad8c-31b7f1ee07a7)
+![Screenshot 2024-11-19 at 11 05 25 PM](https://github.com/user-attachments/assets/b325fe13-cc27-47b9-bbc1-ccdf743006ec)
 
