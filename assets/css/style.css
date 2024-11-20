@@ -74,6 +74,7 @@ body {
     background-color: var(--secondary-color);
     padding: 20px;
     border-radius: 8px;
+    margin-top: auto;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -94,6 +95,7 @@ body {
 
 #assistance {
     background-color: var(--secondary-color);
+    margin-top: auto;
 }
 
 #assistance p {
@@ -103,6 +105,7 @@ body {
 
 #sponsor {
     background-color: var(--secondary-color);
+    margin-top: auto;
 }
 
 #sponsor p {
@@ -120,6 +123,7 @@ body {
     max-width: 200px;
     margin: 10px 0;
     border-radius: 8px;
+    margin-top: 50px;
 }
 
 #options {
